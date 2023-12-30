@@ -1,0 +1,437 @@
+@import url("https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Inconsolata:wght@500&family=Montserrat:wght@500&family=Poppins:wght@500;600&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: white;
+  font-family: "Montserrat";
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+.cursor {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  position: fixed;
+  background-color: white;
+  z-index: 8;
+  transition: background-image .5s;
+  background-position: center;
+  background-size: cover;
+  mix-blend-mode: difference;
+  transition: height width 0.5s ease-out;
+}
+#purple{
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: rgb(51, 38, 51);
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 99;
+  opacity: 0;
+  display: none;
+  transition: opacity ease 1s;
+  text-align: center;
+  padding: 30px;
+  overflow: scroll;
+}
+#purple h1{
+  margin-top: 150px;
+}
+#purple p{
+  margin-top: 200px;
+  text-align: justify;
+  font-size: 2vw;
+}
+#purple span{
+  padding: 100px 50px;
+  line-height: 80px;
+  font-size: 1.5rem;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+}
+.main {
+  background-color: #0f0d0d;
+}
+.page1 {
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  z-index: 9;
+  padding-top: 12vw;
+
+}
+#nav {
+  height: 55px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+  position: fixed;
+  mix-blend-mode: difference;
+  z-index: 102;
+}
+
+#nav img {
+  height: 80px;
+}
+#nav-part2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+#nav #circle {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: white;
+}
+#nav h4 {
+  font-size: 17px;
+  text-transform: uppercase;
+  font-weight: 600;
+  cursor: pointer;
+}
+#nav h4:nth-child(1) {
+  border-bottom: 1px solid white;
+}
+
+.page1 h1 {
+  font-size: 8vw;
+  font-weight: 400;
+  margin-left: 6vw;
+}
+.page1 h2 {
+  font-size: 8vw;
+  font-weight: 400;
+  margin-left: 29vw;
+}
+.page1 video {
+  width: 60%;
+  margin-top: 10vw;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.page2 {
+  min-height: 100vh;
+  width: 100%;
+  padding: 100px 5vw;
+  border-bottom: 2px solid rgb(56, 56, 56);
+  position: relative;
+  z-index: 9;
+}
+.page2 h1 {
+  font-size: 7vw;
+  font-weight: 500;
+  color: black;
+}
+.page2-container {
+  height: 60vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* padding:0 5vw; */
+}
+.page2-left {
+  width: 38%;
+}
+.page2-right {
+  width: 30%;
+}
+.page2-left h2 {
+  font-size: 2vw;
+  font-weight: 300;
+  color: black;
+  line-height: 2vw;
+}
+.page2-right p {
+  font-size: 18px;
+  color: black;
+}
+.page2-right button {
+  width: 100%;
+  border-radius: 50px;
+  border: none;
+  padding: 4px 0;
+  background-color: grey;
+  color: black;
+  margin-top: 20px;
+}
+.page3 {
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  padding: 100px;
+  z-index: 9;
+}
+.page3 h1 {
+  font-size: 6.8vw;
+  color: black;
+  font-weight: 300;
+  margin-left: 100px;
+}
+/* Common styles for .page3-part1 */
+.page3-part1 {
+  margin-top: 70px;
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(300px, 1fr)
+  ); /* Responsive grid layout */
+  gap: 20px; /* Spacing between items */
+}
+
+/* Style for images */
+.page3-part1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+  transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.page3-part1 img:hover {
+  transform: scale(1.05); /* Slightly zoom in on hover */
+}
+
+/* Style for videos */
+.page3-part1 video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+  transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.page3-part1 video:hover {
+  transform: scale(1.05); /* Slightly zoom in on hover */
+}
+.page4 {
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  z-index: 9;
+  padding:100px 100px;
+}
+.elem{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.text-div{
+  height: 170px;
+  overflow: hidden;
+}
+.elem h1{
+  font-size: 7.3vw;
+  transition: all ease-out .5s;
+}
+.elem img{
+  width: 200px;
+  position: absolute;
+  opacity: 0;
+  transition: all ease-out .5s;
+
+}
+.elem img:nth-child(1){
+  left: 2%;
+}
+.elem img:nth-child(3){
+  right: 10%;
+}
+.elem:hover h1{
+  transform: translateY(-100%);
+  color: white;
+}
+.elem:hover img{
+  opacity: 1;
+  transform: translateY(10%) rotate(2deg);
+
+}
+.page5 {
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  z-index: 9;
+  padding: 140px 100px;
+}
+
+.page5 h2{
+  font-size: 4vw;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-bottom: 50px;
+}
+.box{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height:100px;
+  padding: 0 20px;
+  border-top: 1.5px solid green;
+}
+.box:nth-last-child(1){
+  border-bottom: 1.5px solid green;
+}
+
+
+#footer{
+  height: 100vh;
+  width: 100%;
+  padding: 100px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#footer h1{
+  font-size: 10vw;
+}
+#footer a{
+  text-decoration: none;
+  font-size: 20px;
+
+}
+#footer a:hover{
+  text-decoration: underline;
+  color: blue;
+}
+#footer-part{
+  height: 80px;
+  width: 100%;
+  background-color: grey;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  font-weight: bold;
+}
+/* For screens smaller than 768px */
+@media screen and (max-width: 767px) {
+  /* Apply styles here */
+  body {
+    font-size: 14px;
+  }
+
+  /* Example changes */
+  .page1 h1 {
+    font-size: 5vw;
+    margin-left: 3vw;
+  }
+
+  .page1 h2 {
+    font-size: 5vw;
+    margin-left: 20vw;
+  }
+
+  .page1 video {
+    width: 80%;
+    margin-top: 5vw;
+  }
+
+  /* Additional changes for responsiveness */
+  #nav {
+    padding: 0 10px;
+  }
+
+  #nav img {
+    height: 60px;
+  }
+
+  #nav h4 {
+    font-size: 14px;
+  }
+
+  .page2 h1 {
+    font-size: 5vw;
+  }
+
+  .page2-left h2 {
+    font-size: 3vw;
+    line-height: 3vw;
+  }
+
+  .page3 h1 {
+    font-size: 5.8vw;
+    margin-left: 30px;
+  }
+
+  .page3-part1 img,
+  .page3-part1 video {
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  }
+
+  .page3-part1 img:hover,
+  .page3-part1 video:hover {
+    transform: scale(1.03);
+  }
+
+  .page4 h1 {
+    font-size: 5.3vw;
+  }
+
+  .elem img {
+    width: 150px;
+  }
+
+  .page5 h2 {
+    font-size: 3.5vw;
+    margin-bottom: 30px;
+  }
+  
+  /* Other elements to adjust as needed */
+}
+/* CSS to style the popup */
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(146, 110, 110);
+  border: 1px solid #ccc;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  color: black;
+  height: 400px;
+  width: 500px;
+  border-radius: 20px;
+  opacity: 1;
+}
+
+.popup-content {
+  text-align: center;
+  padding: 20px;
+}
+
+.close {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  cursor: pointer;
+}
+.popup-content span,p{
+  color: black;
+  font-size: 35px;
+  
+}
+.popup-content #cross{
+  font-size: 40px;
+}
+.popup-content #cross:hover{
+  color: red;
+}

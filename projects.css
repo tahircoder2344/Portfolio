@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Inconsolata:wght@500&family=Montserrat:wght@500&family=Poppins:wght@500;600&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: white;
+  font-family: "Montserrat";
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+.cursor {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  position: fixed;
+  background-color: white;
+  z-index: 8;
+  transition: background-image 0.5s;
+  background-position: center;
+  background-size: cover;
+  mix-blend-mode: difference;
+  transition: height width 0.5s ease-out;
+}
+#purple {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: rgb(121, 77, 121);
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 99;
+  opacity: 0;
+  display: none;
+  transition: opacity ease 1s;
+  text-align: center;
+}
+#purple h1 {
+  margin-top: 150px;
+}
+#purple p {
+  margin-top: 200px;
+  text-align: justify;
+  font-size: 2vw;
+}
+#purple span {
+  padding: 100px 50px;
+  line-height: 80px;
+  font-size: 1.5rem;
+  color: black;
+  font-weight: 700;
+}
+#nav {
+  height: 55px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+  position: fixed;
+  mix-blend-mode: difference;
+  z-index: 102;
+  color: white;
+  background-color: transparent;
+}
+
+#nav img {
+  height: 80px;
+}
+#nav-part2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+#nav #circle {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: white;
+}
+#nav h4 {
+  font-size: 17px;
+  text-transform: uppercase;
+  font-weight: 600;
+  cursor: pointer;
+}
+#nav h4:nth-child(1) {
+  border-bottom: 1px solid white;
+}
+.main {
+  background-color: #0f0d0d;
+}
+.page1 {
+  min-height: 90vh;
+  width: 100%;
+  position: relative;
+  z-index: 9;
+  padding-top: 12vw;
+}
+.page1 h1 {
+  font-size: 8vw;
+  font-weight: 400;
+  margin-left: 6vw;
+}
+.page1 h2 {
+  font-size: 8vw;
+  font-weight: 400;
+  margin-left: 29vw;
+}
+.page2 {
+  min-height: 50vh;
+  width: 100%;
+  padding: 100px 5vw;
+  border-bottom: 2px solid rgb(56, 56, 56);
+  position: relative;
+  z-index: 9;
+}
+.page2 h1{
+  text-align: center;
+  font-size: 5vw;
+}
+.page2 p{
+  text-align: justify;
+  font-size:  1.5rem; 
+  padding: 40px;
+}
+.page2 .links{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin-top: 50px;
+}
+.links a{
+  font-size: 1.3vw;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+.links a:hover{
+  color: rgb(214, 165, 28);
+  text-decoration: underline;
+}
+#footer{
+  height: 100vh;
+  width: 100%;
+  padding: 100px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: black;
+}
+#footer h1{
+  font-size: 10vw;
+  color: black;
+}
+#footer a{
+  text-decoration: none;
+  font-size: 1.9rem;
+  color: black;
+
+}
+#footer a:hover{
+  text-decoration: underline;
+  color: blue;
+}
+#footer-part{
+  height: 80px;
+  width: 100%;
+  background-color: grey;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  font-weight: bold;
+  color: black;
+}
+/* CSS to style the popup */
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(146, 110, 110);
+  border: 1px solid #ccc;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  color: black;
+  height: 400px;
+  width: 500px;
+  border-radius: 20px;
+  opacity: 1;
+}
+
+.popup-content {
+  text-align: center;
+  padding: 20px;
+}
+
+.close {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  cursor: pointer;
+}
+.popup-content span,p{
+  color: black;
+  font-size: 35px;
+  
+}
+.popup-content #cross{
+  font-size: 40px;
+}
+.popup-content #cross:hover{
+  color: red;
+}
